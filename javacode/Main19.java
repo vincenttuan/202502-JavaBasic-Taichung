@@ -75,6 +75,15 @@ public class Main19 {
 			default:
 				System.out.println("錯誤");
 		}
+		// JDK 12(含)以後的 switch-case + lambda
+		String season = switch(month) {
+			case 12, 1, 2 -> "冬";
+			case 3, 4, 5 -> "春";
+			case 6, 7, 8 -> "夏";
+			case 9, 10, 11 -> "秋";
+			default -> "錯誤";
+		};
+		System.out.println(season);
 		
 	}
 }
