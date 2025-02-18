@@ -31,6 +31,50 @@ public class Main19 {
 		} else if(month == 9 || month == 10 || month == 11) {
 			System.out.println("秋");
 		}
+
+		// ---------------------------------------------
+		// 改用 switch-case
+		switch(month) {
+			case 12:
+			case 1:
+			case 2:
+				System.out.println("冬");
+				break;	
+			case 3:
+			case 4:
+			case 5:
+				System.out.println("春");
+				break;
+			case 6:
+			case 7:
+			case 8:
+				System.out.println("夏");
+				break;	
+			case 9:
+			case 10:
+			case 11:
+				System.out.println("秋");
+				break;	
+			default:
+				System.out.println("錯誤");
+		}
+		// JDK 12(含)以後的 switch-case
+		switch(month) {
+			case 12, 1, 2:
+				System.out.println("冬");
+				break;	
+			case 3, 4, 5:
+				System.out.println("春");
+				break;
+			case 6, 7, 8:
+				System.out.println("夏");
+				break;	
+			case 9, 10, 11:
+				System.out.println("秋");
+				break;	
+			default:
+				System.out.println("錯誤");
+		}
 		
 	}
 }
